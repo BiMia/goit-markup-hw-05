@@ -41,6 +41,8 @@ ul {
 
 /* Classes */
 .modal {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
@@ -56,33 +58,28 @@ ul {
 }
 
 .modal-page {
-  width: 408px;
-  min-height: 584px;
-  border-radius: 4px;
-  background: #fcfcfc;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
   width: 24px;
   height: 24px;
-  fill: #e7e9fc;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
-  border: (1px solid rgba(0, 0, 0, 0.1));
+  top: 24px;
+  right: 24px;
   border-radius: 50%;
   margin: 32px 32px 544px 368px;
   cursor: pointer;
   position: absolute;
-  top: 24px;
-  right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,25 +92,19 @@ ul {
 .modal-button:hover {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal-button:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal-svg {
   fill: #2e2f42;
   margin: auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-svg:hover {
-  fill: #ffffff;
-}
-
-.modal-svg {
-  fill: #ffffff;
 }
 
 .container {
@@ -171,7 +162,7 @@ ul {
 }
 
 .nav-link {
-  color: #2e2f42;
+  color: #404bbf;
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -195,11 +186,6 @@ ul {
   background-color: #404bbf;
   border-radius: 2px;
 }
-
-.last-li {
-  margin-right: 0;
-}
-
 .contacts-section {
   font-style: normal;
 }
@@ -247,6 +233,7 @@ ul {
 .btn-order-service {
   font-family: "Roboto", sans-serif;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -259,7 +246,6 @@ ul {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-order-service:hover,
