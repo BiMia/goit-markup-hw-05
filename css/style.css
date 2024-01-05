@@ -463,11 +463,11 @@ ul {
 }
 
 .portfolio-links:hover .portfolio-paragraph {
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .portfolio-links:focus .portfolio-paragraph {
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .titles {
